@@ -1,8 +1,8 @@
 #include <stdio.h>
 
-int prime() {
-    int a,b;
-    scanf("%d",&a);
+void prime() {
+    int a, b;
+    scanf("%d", &a);
     while (a > 0) {
         scanf("%d", &b);
         if (b % 2 == 0) {
@@ -12,4 +12,9 @@ int prime() {
         }
         a--;
     }
+}
+
+int main() {
+    prime();
+    return 0;
 }
