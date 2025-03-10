@@ -12,5 +12,5 @@ int prime() {
         }
         a--;
     }
+    return 0;
 }
-prime()
