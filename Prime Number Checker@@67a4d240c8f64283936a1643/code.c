@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main() {
+int prime() {
     int a,b;
     scanf("%d",&a);
     while (a > 0) {
@@ -13,4 +13,4 @@ int main() {
         a--;
     }
 }
-
+prime()
