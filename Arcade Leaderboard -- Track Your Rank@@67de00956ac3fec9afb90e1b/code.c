@@ -5,7 +5,7 @@ int compare(const void *a, const void *b) {
     return (*(int *)b - *(int *)a); // Sort in descending order
 }
 
-void climbingLeaderboard(int leaderboard[], int leaderboardSize, int alice_scores[], int aliceSize, int ranks[]) {
+void trackPlayerRanks(int leaderboard[], int leaderboardSize, int alice_scores[], int aliceSize, int ranks[]) {
     // Step 1: Create an array for unique scores
     int *uniqueScores = (int *)malloc(leaderboardSize * sizeof(int));
     int uniqueCount = 0;
