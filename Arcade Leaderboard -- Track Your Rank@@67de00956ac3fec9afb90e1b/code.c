@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 int compare(const void *a, const void *b) {
-    return (*(int *)b - *(int *)a; // Sort in descending order
+    return (*(int *)b - *(int *)a); // Sort in descending order
 }
 
 void climbingLeaderboard(int leaderboard[], int leaderboardSize, int alice_scores[], int aliceSize, int ranks[]) {
