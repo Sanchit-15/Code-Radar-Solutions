@@ -22,7 +22,7 @@ int main() {
         }
     }for (int i = 0; i < N; i++) {
         if (min>=arr[i]) {
-            mi=arr[i];
+            min=arr[i];
             return 0;
         }
     }
