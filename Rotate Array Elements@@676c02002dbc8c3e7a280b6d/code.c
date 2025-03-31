@@ -1,5 +1,12 @@
 // Your code here...
 #include<stdio.h>
+void rev(int arr[];int a; int b;){
+    for(int i=a,j=b;i<j;i++,j--){
+        int temp=arr[i];
+        arr[i]=arr[j];
+        arr[j]=temp;
+    }
+}
 int main(){
     int N;
     int arr[sizeof(N)];
@@ -9,11 +16,8 @@ int main(){
     }
     int k;
     scanf("%d",&k);
-    for(int i=k-1,j=N-1;i>=0,j>=N-k;i--,j--){
-        int temp =arr[i];
-        arr[i]=arr[k];
-        arr[k]=temp;
-    }    
+    rev(arr[],0,N-1);
+    rev(arr[],k,N-K);
     for(int i=0;i<N;i++){
         printf("%d\n",arr[i]);
     }
