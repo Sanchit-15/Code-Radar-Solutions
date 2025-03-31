@@ -7,21 +7,15 @@ int main(){
     for(int i=0;i<N;i++){
         scanf("%d",&arr[i]);
     }
-    int z=N;
     int k;
     scanf("%d",&k);
-    int i=0;
-    int j=k%N;
-    while(i<j){
-        arr[i]=arr[N];
-        i++;
-        N--;
-    }
-    for(int i=0;i<z;i++){
+    for(int i=0,j=N-1;i<k,j>=N-k;i++j--){
+        int temp =arr[i];
+        arr[i]=arr[k];
+        arr[k]=temp;
+    }    
+    for(int i=0;i<N;i++){
         printf("%d\n",arr[i]);
     }
-
-        
-    
 
 }
