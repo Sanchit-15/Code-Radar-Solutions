@@ -1,23 +1,29 @@
-// Your code here...
-
 #include <stdio.h>
+
 int main() {
     int N;
     scanf("%d", &N);
 
-    int arr[N];  // Define array size based on N
+    int arr[N];
 
-    // Read array elements
     for (int i = 0; i < N; i++) {
         scanf("%d", &arr[i]);
     }
-    int max=arr[N];
-    int k++
-    for(int i=0;i<N-1;i++){
-        if(max>=arr[i]) k++;
-        else;
+
+    int isSorted = 1;
+
+    for (int i = 0; i < N - 1; i++) {
+        if (arr[i] > arr[i + 1]) {
+            isSorted = 0;
+            break;
+        }
     }
-    if(k=N-1) printf("Sorted");
-    else printf("Not Sorted");
+
+    if (isSorted) {
+        printf("Sorted\n");
+    } else {
+        printf("Not Sorted\n");
+    }
+
     return 0;
 }
