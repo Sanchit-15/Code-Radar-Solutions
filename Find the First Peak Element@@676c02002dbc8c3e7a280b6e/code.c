@@ -19,7 +19,7 @@ int main() {
         }
     }
 
-    printf("No peak element\n");
+    printf("-1");
 
     return 0;
 }
