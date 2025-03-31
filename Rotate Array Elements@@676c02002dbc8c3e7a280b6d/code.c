@@ -31,9 +31,9 @@ int main() {
     rev(arr, k, N - 1); // Reverse the remaining elements
     // Print the array after performing the operation
     for (int i = 0; i < N; i++) {
-        printf("%d ", arr[i]);
+        printf("%d\n", arr[i]);
     }
-    printf("\n");
+    
 
     return 0;
 }
