@@ -6,22 +6,20 @@ int main() {
 
     int arr[N];
 
+    // Input array elements
     for (int i = 0; i < N; i++) {
         scanf("%d", &arr[i]);
     }
 
-    int isSorted = 1;
-
-    for (int i = 0; i < N - 1; i++) {
-        if (arr[i] > arr[i + 1]&&arr[i] > arr[i - 1]) {
-            isSorted = arr[i];
-            break;
-        }else{
-            isSorted=-1;
+    // Check for the first peak element
+    for (int i = 0; i < N; i++) {
+        if ((i == 0 && arr[i] > arr[i + 1]) || (i == N - 1 && arr[i] > arr[i - 1]) || (arr[i] > arr[i - 1] && arr[i] > arr[i + 1])) {
+            printf("%d\n", arr[i]);
+            return 0;
         }
     }
-    printf("%d",isSorted);
-    
+
+    printf("No peak element\n");
 
     return 0;
 }
