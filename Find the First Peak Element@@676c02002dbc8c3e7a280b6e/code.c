@@ -12,7 +12,7 @@ int main() {
 
     int isSorted = 1;
 
-    for (int i = 1; i < N - 2; i++) {
+    for (int i = 0; i < N - 1; i++) {
         if (arr[i] > arr[i + 1]&&arr[i] > arr[i - 1]) {
             isSorted = arr[i];
             break;
