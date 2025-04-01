@@ -1,5 +1,5 @@
 #include <stdio.h>
-void seclgst(int arr[],N){
+void seclgst(int arr[],int N){
     int max=arr[0]
     for(int i=1;i<N;i++){
         if(max<arr[i]){
@@ -23,6 +23,6 @@ int main() {
     for (int i = 0; i < N; i++) {
         scanf("%d", &arr[i]);
     }
-    seclgst(int arr[],N);
+    seclgst(int arr[],int N);
     return 0;
 }
