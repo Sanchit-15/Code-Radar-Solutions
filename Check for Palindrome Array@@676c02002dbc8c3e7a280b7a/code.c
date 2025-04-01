@@ -11,16 +11,21 @@ int main() {
         scanf("%d", &arr[i]);
     }
 
-    char a[5] = "Yes";  // Initialize string
-
     // Check if the array is a palindrome
+    int isPalindrome = 1;  // Assume the array is a palindrome
+
     for (int i = 0; i < N / 2; i++) {
         if (arr[i] != arr[N - i - 1]) {
-            a = "No";  // If mismatch, set "No"
-            break;
+            isPalindrome = 0;  // Set to 0 if a mismatch is found
+            break;  // Exit loop as it's not a palindrome
         }
     }
 
-    printf("%s", a);  // Print the result
+    if (isPalindrome) {
+        printf("Yes\n");  // Array is a palindrome
+    } else {
+        printf("No\n");  // Array is not a palindrome
+    }
+
     return 0;
 }
