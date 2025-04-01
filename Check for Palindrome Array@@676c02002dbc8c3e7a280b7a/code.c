@@ -22,9 +22,9 @@ int main() {
     }
 
     if (isPalindrome) {
-        printf("Yes\n");  // Array is a palindrome
+        printf("YES\n");  // Array is a palindrome
     } else {
-        printf("No\n");  // Array is not a palindrome
+        printf("NO\n");  // Array is not a palindrome
     }
 
     return 0;
