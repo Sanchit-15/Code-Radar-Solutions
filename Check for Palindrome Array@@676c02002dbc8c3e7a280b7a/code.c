@@ -11,7 +11,7 @@ int main() {
         scanf("%d", &arr[i]);
     }
 
-    char a[] = "Yes";  // Initialize string
+    char a[5] = "Yes";  // Initialize string
 
     // Check if the array is a palindrome
     for (int i = 0; i < N / 2; i++) {
