@@ -11,13 +11,14 @@ int main() {
     for (int i = 0; i < N; i++) {
         scanf("%d", &arr[i]);
     }
-    char a=Yes; 
+    char a[5]='Yes'; 
     for(int i=0;i<N/2;i++){
         if(arr[i]=arr[N-i-1]){
-            a=Yes;
+            a='Yes';
         }else{
-            printf("No");
+            a='No';
         }
     }
+    printf("%s",a);
     return 0;
 }
