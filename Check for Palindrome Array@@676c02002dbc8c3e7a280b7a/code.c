@@ -1,30 +1,29 @@
 #include <stdio.h>
+int isPalindrome(int arr[], int size) {
+    int start = 0, end = size - 1;
+    while (start < end) {
+        if (arr[start] != arr[end]) {
+            return 0;
+        }
+        start++;
+        end--;
+    }
+    return 1; 
+}
 
 int main() {
-    int N;
-    scanf("%d", &N);
+    int n;
+    scanf("%d", &n);
 
-    int arr[N];
-
-    // Input array elements
-    for (int i = 0; i < N; i++) {
+    int arr[n];
+    for (int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
     }
 
-    // Check if the array is a palindrome
-    int isPalindrome = 1;  // Assume the array is a palindrome
-
-    for (int i = 0; i < N / 2; i++) {
-        if (arr[i] != arr[N - i - 1]) {
-            isPalindrome = 0;  // Set to 0 if a mismatch is found
-            break;  // Exit loop as it's not a palindrome
-        }
-    }
-
-    if (isPalindrome) {
-        printf("YES\n");  // Array is a palindrome
+    if (isPalindrome(arr, n)) {
+        printf("YES");
     } else {
-        printf("NO\n");  // Array is not a palindrome
+        printf("NO");
     }
 
     return 0;
