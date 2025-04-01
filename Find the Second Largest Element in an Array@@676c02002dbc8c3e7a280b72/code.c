@@ -2,7 +2,6 @@
 
 int seclgst(int arr[], int N) {
     if (N < 2) {
-        printf("Array must contain at least two elements.\n");
         return -1; // Return -1 to indicate an error
     }
 
