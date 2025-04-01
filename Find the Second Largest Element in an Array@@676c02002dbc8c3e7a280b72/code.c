@@ -1,6 +1,6 @@
 #include <stdio.h>
 void seclgst(int arr[],int N){
-    int max=arr[0]
+    int max=arr[0];
     for(int i=1;i<N;i++){
         if(max<arr[i]){
             max=arr[i];
