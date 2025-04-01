@@ -1,30 +1,26 @@
 #include <stdio.h>
-#include <limits.h>
 
 int seclgst(int arr[], int N) {
     if (N < 2) {
         printf("Array must contain at least two elements.\n");
-        return INT_MIN;
+        return -1; // Return -1 to indicate an error
     }
 
-    int max = INT_MIN;
-    int sec = INT_MIN;
+    int max = arr[0];
+    int sec = -1; // Initialize sec to -1 to indicate no second largest found
 
-    for (int i = 0; i < N; i++) {
+    for (int i = 1; i < N; i++) {
         if (arr[i] > max) {
+            sec = max;
             max = arr[i];
-        }
-    }
-
-    for (int i = 0; i < N; i++) {
-        if (arr[i] > sec && arr[i] < max) {
+        } else if (arr[i] > sec && arr[i] < max) {
             sec = arr[i];
         }
     }
 
-    if (sec == INT_MIN) {
+    if (sec == -1) {
         printf("There is no second largest element.\n");
-        return INT_MIN;
+        return -1; // Return -1 to indicate no second largest found
     }
 
     return sec;
@@ -41,7 +37,7 @@ int main() {
 
     int secondLargest = seclgst(arr, N);
     
-    if (secondLargest != INT_MIN) {
+    if (secondLargest != -1) {
         printf("%d\n", secondLargest);
     }
 
