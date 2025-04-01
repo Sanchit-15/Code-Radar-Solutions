@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include<stlib.h>
+#include<stdlib.h>
 int sum(int n) {
     int sum=0;
     n=abs(n)
