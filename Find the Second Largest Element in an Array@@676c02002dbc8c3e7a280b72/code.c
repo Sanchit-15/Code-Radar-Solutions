@@ -19,7 +19,6 @@ int seclgst(int arr[], int N) {
     }
 
     if (sec == -1) {
-        printf("There is no second largest element.\n");
         return -1; // Return -1 to indicate no second largest found
     }
 
