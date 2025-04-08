@@ -1,12 +1,12 @@
 #include <stdio.h>
 
 int seclgst(int arr[], int N) {
-    if (N < 2) {
-        return -1; // Return -1 to indicate an error
+    if ((N < 2)) {
+        return -1;
     }
 
     int max = arr[0];
-    int sec = -1; // Initialize sec to -1 to indicate no second largest found
+    int sec = arr[0];
 
     for (int i = 1; i < N; i++) {
         if (arr[i] > max) {
