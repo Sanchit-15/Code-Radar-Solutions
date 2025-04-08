@@ -14,11 +14,13 @@ int seclgst(int arr[], int N) {
             max = arr[i];
         } else if (arr[i] > sec && arr[i] < max) {
             sec = arr[i];
+        }else if(max==sec){
+            sec=-1;
         }
     }
 
     if (sec == -1) {
-        return -1; // Return -1 to indicate no second largest found
+        return -1;
     }
 
     return sec;
