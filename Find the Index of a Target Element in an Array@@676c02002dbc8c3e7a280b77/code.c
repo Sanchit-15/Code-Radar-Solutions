@@ -10,7 +10,7 @@ int main(){
     int c,d;
     scanf("%d",&c);
     for(int i=0;i<a;i++){
-        if(c=n[i]){
+        if(c==n[i]){
             d=i;
             break;
         }else{
