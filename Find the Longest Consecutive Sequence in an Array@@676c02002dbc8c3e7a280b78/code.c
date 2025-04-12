@@ -18,7 +18,7 @@ void longes(int a[], int n) {
     for (int i = 1; i < n; i++) {
         if (a[i] == a[i-1] + 1) {
             curre++;
-        } else if (a[i] != a[i-1]) {
+        } else(a[i] != a[i-1]) {
             if (curre > maxlen) {
                 maxlen = curre;
             }
