@@ -6,7 +6,7 @@ int longes(int a[],int n){
             if(a[j]>a[j+1]){
                 int t=a[j];
                 a[j]=a[j+1];
-                a[j+1]=temp;
+                a[j+1]=t;
             }
         }
     }
@@ -30,6 +30,6 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%d",&a[i]);
     }
-    longes(int a[n],int n);
-    
+    longes(a[n],n);
+
 }
