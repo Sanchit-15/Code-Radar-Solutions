@@ -1,4 +1,5 @@
 // Your code here...
+#include<stdio.h>
 int max(int a[],int n){
     int max=0;
     int count=1;
