@@ -1,23 +1,24 @@
-// Your code here...
-#include<stdio.h>
-int rep(int a[],int n){
-    for(int i=0;i<n-1;i++){
-        int rep=a[i];
-        for(int j=0;j<n;j++){
-            if(i==j) continue;
-            if(rep==a[j]){
-                break;
+#include <stdio.h>
+
+void rep(int a[], int n) {
+    for (int i = 0; i < n - 1; i++) {
+        for (int j = i + 1; j < n; j++) {
+            if (a[i] == a[j]) {
+                printf("%d", a[i]);
+                return;
             }
         }
     }
-    printf("%d",rep);
+    printf("-1"); 
 }
-int main(){
+
+int main() {
     int n;
-    scanf("%d",&n);
+    scanf("%d", &n);
     int a[n];
-    for(int i=0;i<n;i++){
-        scanf("%d",&a[i]);
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &a[i]);
     }
-    rep(a,n);
+    rep(a, n);
+    return 0;
 }
